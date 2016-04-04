@@ -1,0 +1,69 @@
+﻿@start
+ 
+ title RSP
+ 
+ start
+ 
+ :Enter User Input r=1 s=2 p=3;
+ 
+ :Enter Computer Input=1 s=2 p=3;
+ 
+ if(User=='1')
+ 
+   if(com=='1')
+ 
+   :print "Draw";
+ 
+   elseif(com=='2')
+ 
+   :print "U win";
+ 
+   else(com=='3')
+ 
+   :print "C win";
+ 
+   endif
+ 
+   
+ 
+ if(User=='2')
+ 
+   if(com=='1')
+ 
+   :print "C win";
+ 
+   elseif(com=='2')
+ 
+   :print "Draw";
+ 
+   elseif(com=='3')
+ 
+   :print "U win";
+ 
+   endif
+ 
+   
+ 
+ if(User=='3')
+ 
+   if(com=='1')
+ 
+   :print "U win";
+ 
+   elseif(com=='2')
+ 
+   :print "C win";
+ 
+   elseif(com=='3')
+ 
+   :print "Draw";  
+ 
+   endif
+ 
+ 
+ 
+ endif
+ 
+ stop
+ 
+ @enduml 
