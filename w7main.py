@@ -63,7 +63,7 @@ def lab7_1():
 def lab7_2():
     drawSquareFront()
 def lab7_3():
-    a=trackSave()
+    a=trackSave(0,0)
     replayTracks(a)
 def main():
     lab7_1()
