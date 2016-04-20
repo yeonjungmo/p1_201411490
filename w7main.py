@@ -18,16 +18,57 @@ def drawSquareAtSave(size,pos):
 def drawSquareFront():
     for j in range(1,5):
         t1.goto(x[j])
+
+def trackSave(size,pos):
+    track=list()
+    t1.penup()
+    t1.setpos(-400,300)
+    t1.pendown()
+    track.append(t1.pos())
+    t1.right(90)
+    t1.fd(400)
+    t1.backward(150)
+    track.append(t1.pos())
+    t1.left(90)
+    t1.fd(300)
+    track.append(t1.pos())
+    t1.left(90)
+    t1.fd(300)
+    t1.back(150)
+    track.append(t1.pos())
+    t1.right(90)
+    t1.fd(300)
+    track.append(t1.pos())
+    t1.left(90)
+    t1.right(90)
+    t1.right(90)
+    t1.fd(200)
+    t1.fd(300)
+    t1.back(100)
+    track.append(t1.pos())
+    t1.left(90)
+    t1.fd(200)
+    track.append(t1.pos())
+    print track
+    return track
+
+
+def replayTracks(tracks):
+    for t in mytracks:
+        print t
         
 def lab7_1():
     mytracks=drawSquareAtSave(100,100)
     print mytracks
 def lab7_2():
     drawSquareFront()
-    
+def lab7_3():
+    a=trackSave()
+    replayTracks(a)
 def main():
     lab7_1()
     lab7_2()
+    lab7_3()
     
 if __name__=="__main__":
     main()
