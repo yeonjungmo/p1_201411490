@@ -1,16 +1,16 @@
-﻿import turtle
+import turtle
 wn=turtle.Screen()
 t1=turtle.Turtle()
 t1.shape("turtle")
 x=dict()
-x=({0:(0,0),1:(0,100),2:(100,100),3:(100,0),4:(0,0)})
+x=({0:(0,0),1:(100,0),2:(100,100),3:(0,100),4:(0,0)})
 
 def drawSquareAtSave(size,pos):
     tracks=list()
     t1.penup()
     t1.setpos(pos,0)
     t1.pendown()
-    for i in range(0,4):
+    for i in range(1,5):
         t1.fd(100)
         t1.right(90)
         tracks.append(t1.pos())
