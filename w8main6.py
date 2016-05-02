@@ -36,3 +36,13 @@ def countDig():
     plt.xticks(range(len(d)),list(d.keys()))
     plt.show()
 
+def lab8_1():
+    Juso()
+    counDig()
+
+def main():
+    lab8_1()
+
+
+if __name__=="__main__":
+    main()
