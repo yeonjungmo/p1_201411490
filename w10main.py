@@ -37,13 +37,29 @@ def ALLDATA():
   print (b*100)/a
   
 
-d=dict()
-let=list()
-let=(
-    "when I find myself in times of trouble mother Mary comes to me speaking words of wisdom let it be and in my hour of darkness she is standing right in front of me speaking words of wisdom let it be let it be let it be whisper words of wisdom let it be and when the broken hearted people living in the world agree  there will be an answer let it be for though they may be parted there is still a chance that they will see there will be an answer let it be let it be let it be there will be an answer let it be and when the night is cloudy there is still a light that shines on me shine on until tomorro let it be"
-    )
-for i in let.split():
-    if i not in d:
-        d[i]=1
-    else:
-        d[i]=d[i]+1
+def Beatles():
+    d=dict()
+    beatles= list()
+    most=set()
+    beatles=("When I find myself in times of trouble Mother Mary comes to me Speaking words of wisdom let it be And in my hour of darkness She is standing right in front of me peaking words of wisdom let it be Let it be let it be let it be let it be hisper words of wisdom let it be nd when the broken-hearted people Living in the world agree There will be an answer let it be For though they may be parted There is still a chance that they will see There will be an answer let it be Let it be let it be Let it be let it be Yeah there will be an answer let it be Let it be let it be Let it be let it be Whisper words of wisdom let it be Let it be let it be Ah let it be yeah let it be Whisper words of wisdom let it be And when the night is cloudy There is still a light that shines on me Shine on until tomorrow let it be I wake up to the sound of music Mother Mary comes to me Speaking words of wisdom let it be Let it be let it be Let it be yeah let it be Oh there will be an answer let it be Let it be let it be Let it be yeah let it be Whisper words of wisdom let it be")
+
+    for i in beatles.split():
+        if i not in d:
+            d[i]=1
+        else:
+            d[i]  = d[i]+1
+    print "The most words are:"
+
+    for i in d:
+        if d[i]>20:
+            print i
+            
+  def lab10():
+    NewDATA()
+    ALLDATA()
+    Beatles()
+    
+def main():
+    lab10()
+if __name__=="__main__":
+    main()
