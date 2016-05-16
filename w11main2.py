@@ -21,26 +21,34 @@ def namo():
      t1.pendown()
      
 coord=[(100,100),(200,200)]
-curpos=t1.pos()
+curpos=(0,0)
 
 def isRectangle(curpos,coord):
      return coord[0][1]<=curpos[1]<=coord[1][1] and coord[0][0] <= curpos[0]<=coord[1][0]
      
      
 def keyup():
-     t1.fd(50)
+    pt=t1.pos()
+    t1.fd(50)
+    isRectangle(pt,coord)
      
 
 def keydown():
+     pt=t1.pos()
      t1.back(50)
+     isRectangle(pt,coord)
 
 
 def keyleft():
+     pt=t1.pos()
      t1.left(90)
+     isRectangle(pt,coord)
   
 
 def keyright():
+     pt=t1.pos()
      t1.right(90)
+     isRectangle(pt,coord)
 
 def addkeys():
      wn.onkey(keyup,"Up")
@@ -53,6 +61,5 @@ def addkeys():
 def main():
      namo() 
      addkeys()
-     isRectangle(curpos,coord)
      wn.listen()
      turtle.mainloop()
