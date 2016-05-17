@@ -55,4 +55,5 @@ def addMouse():
 	wn.onclick(mousetogo)
 addMouse()
 wn.listen()
+turtle.mainloop()
 	
