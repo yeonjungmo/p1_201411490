@@ -126,6 +126,8 @@ def draw():
     t2.pendown()
     one()
 def TurtleGame():
+    global point
+    point =0
     sel=raw_input("you play the game(y)")
     if(sel == 'y'):
         for i in range(0,1000):
