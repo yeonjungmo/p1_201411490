@@ -6,7 +6,7 @@ t1.shape("turtle")
 t1.color("blue")
 t2=turtle.Turtle()
 point=0
-item={1,2}
+item=[1,2]
 
 def S():
     t2.fd(150)
