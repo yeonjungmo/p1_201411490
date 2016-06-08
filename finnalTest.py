@@ -7,7 +7,7 @@ t1.color("blue")
 t2=turtle.Turtle()
 point=0
 item={1,2}
-random.shuffle(item)
+
 def S():
     t2.fd(150)
     t2.right(90)
@@ -131,7 +131,7 @@ def TurtleGame():
         for i in range(0,1000):
             sal=raw_input("turtle moving(k)")
             if(sal=='k'):
-                
+                random.shuffle(item)
                 a=t1.pos()
                 if(item[0]==1):
                     print "your moving just one"
