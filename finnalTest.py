@@ -309,15 +309,6 @@ def mousegoto(x,y):
 def addMouse():
     wn.onclick(mousegoto)
 def gamePlay():
-    import turtle
-    import random
-    wn=turtle.Screen()
-    t1=turtle.Turtle()
-    t1.shape("turtle")
-    t1.color("blue")
-    t2=turtle.Turtle()
-    point=0
-    item={1,2}
     addKeys()
     addMouse()
     ASS()
